@@ -19,6 +19,7 @@ Voici comment le dépôt est organisé :
 scriptarium/
 │── README.md
 │── thème/
+│ ├── scriptarium-guide.md
 │ ├── thème-bash.sh
 │ ├── thème-powershell.ps1
 │ └── thème-python.py
