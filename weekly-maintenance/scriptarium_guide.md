@@ -17,25 +17,25 @@ Ce guide explique les scripts que j’ai créés pour assurer la maintenance des
 
 Voici chaque étape de mon script Bash :
 
-1. 📝 **Journalisation**
+1. 📝 **Journalisation**  
    À chaque exécution du script, un fichier log est créé pour enregistrer l’ensemble des opérations de maintenance.
 
-2. 🔄 **Mise à jour des dépôts Linux**
+2. 🔄 **Mise à jour des dépôts Linux**  
    Vérifie les dépôts officiels d’Ubuntu afin de détecter si des mises à jour sont disponibles.
 
-3. ⬆️ **Mise à jour des paquets Linux**
+3. ⬆️ **Mise à jour des paquets Linux**  
    Installe les mises à jour des paquets trouvées à l’étape précédente.
 
-4. 🧹 **Suppression des paquets inutiles**
+4. 🧹 **Suppression des paquets inutiles**  
    Nettoie le système Linux des paquets et applications devenus inutiles.
 
-5. 🖥️ **Recompilation des modules VMware**
+5. 🖥️ **Recompilation des modules VMware**  
    J’utilise VMware Workstation pour la virtualisation. Après certaines mises à jour Linux, il arrive que les modules VMware soient à recompiler. Cette étape permet de vérifier leur état et de les recompiler si nécessaire.
 
-6. 💾 **Vérification de l’espace disque**
+6. 💾 **Vérification de l’espace disque**  
    Contrôle l’utilisation des disques (système et données) pour prévenir tout problème futur.
 
-7. 🧠 **Vérification de la mémoire**
+7. 🧠 **Vérification de la mémoire**  
    Comme j’utilise beaucoup la virtualisation, un suivi de la mémoire disponible est essentiel pour moi. Cette étape donne une visualisation rapide de l’état de la RAM.
 
 ### 🪟 Windows (Windows 11)
