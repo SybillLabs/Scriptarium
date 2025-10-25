@@ -1,30 +1,73 @@
-# 📜 Le Scriptarium
+# 📜 Scriptatirium
 
-## 📝 Description
-Le **Scriptarium** est mon dépôt regroupant tous mes scripts passés et à venir.  
-Ils sont écrits en **Bash (Shell)**, **PowerShell** et **Python**.  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sybill%20Gribonval-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sybill-gribonval)
+![Licence](https://img.shields.io/badge/Licence-MIT-purple?style=for-the-badge)
 
-Ces scripts couvrent différents usages :  
-- 🖥️ Administration système  
-- ⚙️ Automatisation  
-- ☁️ Amélioration de mes compétences futures en DevOps  
-- 🔐 Sécurité  
-- 🗂️ Journalisation  
-- … et bien plus encore.  
+![Scripting](https://img.shields.io/badge/Scripting-Automation-white?style=for-the-badge&logo=bitrise)
+![Linux](https://img.shields.io/badge/OS-Linux-orange?style=for-the-badge&logo=linux)
+![Windows](https://img.shields.io/badge/OS-Windows-blue?style=for-the-badge&logo=windows)
+![Bash](https://img.shields.io/badge/Langage-Bash-green?style=for-the-badge&logo=gnubash)
+![PowerShell](https://img.shields.io/badge/Langage-PowerShell-00b8c6?style=for-the-badge&logo=powershell)
+![Python](https://img.shields.io/badge/Langage-Python-green?style=for-the-badge&logo=python)
+
+
+## 📝 Contexte
+Le **Scriptarium** me permettra de regrouper des scripts que j'ai travaillé, en équipe ou seule.  
+Ces scripts seront écrits en **différents langages**, selon leur environnement cible :
+- 🐧 **Bash** : 
+  - *Système* : Linux & macOS
+  - *Extension* : `sh`
+  - *Rôle* : Langage de script pour automatiser des tâches système (commandes shell, gestion de fichiers, ...)
+- 🪟 **PowerShell** : 
+  - *Système* : Windows (mais fonctionne aussi sur Linux et macOS maintenant)
+  - *Extension* : `.ps1`
+  - *Rôle* : Langage et environnement pour administrer Windows (fichiers, services, registres, ...)
+- 🐍 **Python** : 
+  - *Système* : Universel, fonctionne sur **Windows, Linux, macOS** et même sur **Android, iOS, microcontrôleurs, ...**.
+  - *Extension* : `.py`
+  - *Rôle* : Langage **polyvalent** utilisé pour :
+    - l'**automatisation système** et la **gestion d'infrastructure**
+    - le **développement d'outils DevOps**
+    - le **traitement de données** et les **scripts d'intégration (API, Cloud, CI/CD)**
+    - ainsi que le **développement logiciel** (web, IA, ...)
 
 ## 📂 Organisation du dépôt
-Voici comment le dépôt est organisé :  
-
 ```
-scriptarium/
-│── README.md
-│── thème/
-│ ├── scriptarium-guide.md
-│ ├── thème-bash.sh
-│ ├── thème-powershell.ps1
-│ └── thème-python.py
+/
+├── README.md
+├── README.eng.md
+├── Dossier du script
+│   └── script.sh
+│   └── script.ps1
+│   └── script.py
+│   └── guide-script.fr.md
+│   └── guide-script.eng.md
+├── Archives
 ```
 👉 À chaque nouveau thème, un dossier dédié sera créé suivant cette structure.  
+👉 Le dossier **Archives** servira à conserver les scripts plus anciens ou remplacés.
+
+## 🧰 Installation
+
+Pour que les chemins relatifs utilisés dans certains scripts fonctionnent correctement, il est recommandé de **cloner ce dépôt dans le dossier `Documents`** de votre répertoire personnel.
+
+### 🐧 Sous Linux / macOS
+```bash
+git clone https://github.com/SybillLabs/Scriptarium.git "$HOME/Documents/"
+```
+
+### 🪟 Sous Windows (PowerShell)
+```powershell
+git clone https://github.com/tonpseudo/scriptarium.git "$env:USERPROFILE\Documents\"
+```
+
+> Vous pouvez bien sûr choisir un autre emplacement.  
+> Si c’est le cas, veillez simplement à **adapter les chemins** dans les scripts concernés (par exemple pour pointer vers les bons fichiers ou dossiers de sauvegarde).
+
+## ☰ Sommaire
+Cette section recense les fichiers `guide-script.fr.md` de chaque dossier thématique. Chaque entrée pointe vers la version française de ce fichier.
+- [First Script](/first-script/guide-script.fr.md)
+- [Maintenance](/maintenance/guide-script.fr.md)
 
 ## ⚡ Prérequis
 Pour utiliser ce dépôt, il est recommandé d’avoir :  
@@ -37,7 +80,4 @@ Pour utiliser ce dépôt, il est recommandé d’avoir :
 
 ## ⚠️ Avertissements
 Ces scripts sont fournis **à titre éducatif** et ne sont pas forcément universels.  
-➡️ Utilisez-les avec prudence et **testez toujours en environnement isolé avant un usage en production**.  
-
-## 📜 Licence
-Ce dépôt est publié sous licence **MIT** : vous êtes libres d’utiliser, modifier et partager ces scripts, tant que vous conservez la mention de l’auteur.
+➡️ Utilisez-les avec prudence et **testez toujours en environnement isolé avant un usage en production**. 
