@@ -40,12 +40,14 @@ Ces scripts seront écrits en **différents langages**, selon leur environnement
 │   └── script.sh
 │   └── script.ps1
 │   └── script.py
-│   └── guide-script.fr.md
-│   └── guide-script.eng.md
+│   └── guide-script.md
+│   └── Ressources
+│       └── Files
 ├── Archives
 ```
 👉 À chaque nouveau thème, un dossier dédié sera créé suivant cette structure.  
 👉 Le dossier **Archives** servira à conserver les scripts plus anciens ou remplacés.
+👉 Chaque dossier, n'a pas forcément les types de script.
 
 ## 🧰 Installation
 
@@ -66,8 +68,8 @@ git clone https://github.com/tonpseudo/scriptarium.git "$env:USERPROFILE\Documen
 
 ## ☰ Sommaire
 Cette section recense les fichiers `guide-script.fr.md` de chaque dossier thématique. Chaque entrée pointe vers la version française de ce fichier.
-- [First Script](/first-script/guide-script.fr.md)
-- [Maintenance](/maintenance/guide-script.fr.md)
+- [First Script](/first-script/guide-script.md)
+- [Maintenance](/maintenance/guide-script.md)
 
 ## ⚡ Prérequis
 Pour utiliser ce dépôt, il est recommandé d’avoir :  
