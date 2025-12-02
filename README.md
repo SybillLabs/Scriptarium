@@ -46,7 +46,7 @@ Ces scripts seront écrits en **différents langages**, selon leur environnement
 ├── Archives
 ```
 👉 À chaque nouveau thème, un dossier dédié sera créé suivant cette structure.  
-👉 Le dossier **Archives** servira à conserver les scripts plus anciens ou remplacés.
+👉 Le dossier **Archives** servira à conserver les scripts plus anciens ou remplacés.  
 👉 Chaque dossier, n'a pas forcément les types de script.
 
 ## 🧰 Installation

@@ -149,6 +149,11 @@ Fin du script.
 ### 💾 Après sauvegarde
 ![afterbackup](/first-script/Ressources/afterbackup.png)
 
+
+## Bonus : version PowerShell
+
+Pour la formation, le script était demandé en bash, et je viens de l'améliorer. Maintenant je voudrais 
+
 ---
 
 👉 Retour au fichier [README](/README.md).

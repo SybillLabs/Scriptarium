@@ -33,11 +33,20 @@ then
 			}
 			echo "Chemin de sauvegarde : \"$backup_path\"."
 		fi
+		
 		# Now that the folder is created, the script backs up the source folder to the new backup path
-        rsync -a --info=progress2 "$directory_path"/ "$backup_path"/	# The trailing slashes ensure that the contents of the source folder are copied into the destination folder, rather than the folder itself.
-		echo "Sauvegarde effectuée avec succès dans : \"$backup_path\"."
+		if rsync -a --info=progress2 "$directory_path"/ "$backup_path"/	
+		# The trailing slashes ensure that the contents of the source folder are copied into the destination folder, rather than the folder itself.
+		# Using -a, rsync preserves metadata (permissions, timestamps, ownership, links, etc.) and, by default, overwrites existing files without interactive confirmation.
+		then
+			echo "Sauvegarde effectuée avec succès dans : \"$backup_path\"."
+		else
+			echo "Erreur pendant la sauvegarde."
+			echo "Relancement du script."
+			exec "$0"
+		fi
 
-		 # Asks the user if they want to back up another folder
+		# Asks the user if they want to back up another folder
 		echo "[+] Voulez-vous faire une sauvegarde d'un autre dossier ? [Y/N]"
 		read -r another_choice
 		if [[ "$another_choice" =~ ^([Yy]|[Yy][Ee][Ss])$ ]]
