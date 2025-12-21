@@ -1,4 +1,4 @@
-if (-not $IsWindows) {
+﻿if ($env:OS -ne "Windows_NT") {
     Write-Host "Ce script de sauvegarde utilise Robocopy et doit être exécuter sous Windows."
     exit
 }
@@ -55,9 +55,7 @@ if (Test-Path $directory_path -PathType Container) {    # Test-Path : returns tr
         & robocopy @robocopyArgs
         $exitCode = $LASTEXITCODE
         # Interpret Robocopy exit code
-        if ($exitCode -le 1) {
-            # 0 = No files copied (everything already up to date)
-            # 1 = Files copied successfully
+        if ($exitCode -lt 8) {
             Write-Host "Sauvegarde effectuée avec succès dans : $backup_path."
         }
         else {
