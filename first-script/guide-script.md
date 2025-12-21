@@ -143,16 +143,58 @@ n
 Fin du script.
 ```
 
-### ⏳ Avant sauvegarde
-![beforebackup](/first-script/Ressources/beforebackup.png)
-
-### 💾 Après sauvegarde
-![afterbackup](/first-script/Ressources/afterbackup.png)
-
-
 ## Bonus : version PowerShell
 
-Pour la formation, le script était demandé en bash, et je viens de l'améliorer. Maintenant je voudrais 
+Pour la formation, le script était demandé en bash. Pour ma formation personnel, j'ai décidé de faire son équivalent UX en **PowerShell**, en utilisant :
+- *$env:OS -ne "Windows_NT"* : Qui permet de pouvoir lancer le script que si le système d'exploitation est Windows.
+- *Robocopy* : Qui permet de faire la sauvegarde avec un visuel
+
+### 💻 Exemple d'exécution du script
+```powershell
+PS C:\Users\administrator> .\Desktop\script.ps1
+[+] Chemin du dossier à sauvegarder (chemin absolu) :
+C:\Users\administrator\Pictures
+Dossier trouvé. Où voulez-vous stocker la sauvegarde (chemin absolu) ?
+C:\Users\administrator\Desktop
+[+] Vous avez choisi C:\Users\administrator\Desktop comme chemin. Merci de le confirmer : [Y/N]
+y
+Le chemin de sauvegarde existe déjà.
+Chemin de sauvegarde : C:\Users\administrator\Desktop
+
+-------------------------------------------------------------------------------
+   ROBOCOPY   ::   Copie de fichiers robuste pour Windows     
+-------------------------------------------------------------------------------
+
+  D‚butÿ: dimanche 21 d‚cembre 2025 19:26:18
+   Source : C:\Users\administrator\Pictures\
+     Dest : C:\Users\administrator\Desktop\
+
+    Fichiers : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /ETA /R:3 /W:5 
+
+-------------------------------------------------------------------------------
+
+	                   1	C:\Users\administrator\Pictures\
+	  *Fichier SUPPL.		    4027	script.ps1
+	Nouveau r‚p.       2	C:\Users\administrator\Pictures\test1\
+	  Nouveau fichier		       0	azedsqs.txt
+	  Nouveau fichier		       0	test.txt
+
+-------------------------------------------------------------------------------
+
+               Total     Copi‚    Ignor‚Discordance     CHEC    Extras
+     R‚pÿ:         2         1         1         0         0         0
+Fichiersÿ:         3         2         1         0         0         1
+  Octetsÿ:       504         0       504         0         0     3.9 k
+   Heures:   0:00:00   0:00:00                       0:00:00   0:00:00
+   Finÿ: dimanche 21 d‚cembre 2025 19:26:18
+
+Sauvegarde effectuée avec succès dans : C:\Users\administrator\Desktop.
+[+] Voulez-vous faire une sauvegarde d'un autre dossier ? [Y/N]
+n
+Fin du script.
+```
 
 ---
 
