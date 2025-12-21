@@ -145,7 +145,7 @@ Fin du script.
 
 ## Bonus : version PowerShell
 
-➜ Vous pouvez consulter la version **PowerShell** du script [ici](/first-script/guide-script.md)
+➜ Vous pouvez consulter la version **PowerShell** du script [ici](/first-script/script.ps1)
 
 Pour la formation, le script était demandé en bash. Pour ma formation personnel, j'ai décidé de faire son équivalent UX en **PowerShell**, en utilisant :
 - *$env:OS -ne "Windows_NT"* : Qui permet de pouvoir lancer le script que si le système d'exploitation est Windows.
