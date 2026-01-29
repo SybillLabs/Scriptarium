@@ -1,14 +1,13 @@
 # 📜 Scriptatirium
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sybill%20Gribonval-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sybill-gribonval)
-![Licence](https://img.shields.io/badge/Licence-MIT-purple?style=for-the-badge)
+![Statut](https://img.shields.io/badge/Statut-En%20perp%C3%A9tuelle%20%C3%A9volution-purple?style=flat-square&logo=github)
+![FR](https://img.shields.io/badge/Langue-Fran%C3%A7ais-blue?style=flat-square&logo=github)
 
-![Scripting](https://img.shields.io/badge/Scripting-Automation-white?style=for-the-badge&logo=bitrise)
-![Linux](https://img.shields.io/badge/OS-Linux-orange?style=for-the-badge&logo=linux)
-![Windows](https://img.shields.io/badge/OS-Windows-blue?style=for-the-badge&logo=windows)
-![Bash](https://img.shields.io/badge/Langage-Bash-green?style=for-the-badge&logo=gnubash)
-![PowerShell](https://img.shields.io/badge/Langage-PowerShell-00b8c6?style=for-the-badge&logo=powershell)
-![Python](https://img.shields.io/badge/Langage-Python-green?style=for-the-badge&logo=python)
+![Bash](https://img.shields.io/badge/Script-Bash-orange?style=flat-square&logo=gnubash)
+![Powershell](https://img.shields.io/badge/Script-PowerShell-blue?style=flat-square&logo=github)
+![Python](https://img.shields.io/badge/Script-Python-green?style=flat-square&logo=python)
+
+![Logiciel](https://img.shields.io/badge/Editeur%20de%20script-VisualStudioCode-white?style=flat-square&logo=github)
 
 
 ## 📝 Contexte
@@ -67,9 +66,15 @@ git clone https://github.com/tonpseudo/scriptarium.git "$env:USERPROFILE\Documen
 > Si c’est le cas, veillez simplement à **adapter les chemins** dans les scripts concernés (par exemple pour pointer vers les bons fichiers ou dossiers de sauvegarde).
 
 ## ☰ Sommaire
-Cette section recense les fichiers `guide-script.fr.md` de chaque dossier thématique. Chaque entrée pointe vers la version française de ce fichier.
-- [First Script](/first-script/guide-script.md)
-- [Maintenance](/maintenance/guide-script.md)
+Cette section recense les fichiers `guide-script.md` des derniers scripts en date.
+
+### [![FirstScript](https://img.shields.io/badge/First%20Script-Script%20de%20sauvegarde%20automatis%C3%A9e%20avec%20validation%20utilisateur-blue?style=social&logo=github)](/first-script/guide-script.md)
+- Sauvegarde automatisée en Bash & en PowerShell
+- Automatisation de sauvegarde Bash
+- Script Bash – sauvegarde interactive
+- Bash & PowerShell : sauvegarde avec contrôles
+
+### [![Maintenance](https://img.shields.io/badge/Maintenance-Script%20de%20maintenance%20syst%C3%A8me%20automatis%C3%A9e%20avec%20journalisation-blue?style=social&logo=github)](/maintenance/guide-script.md)
 
 ## ⚡ Prérequis
 Pour utiliser ce dépôt, il est recommandé d’avoir :  
