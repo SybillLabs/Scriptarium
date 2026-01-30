@@ -1,8 +1,11 @@
 # 💻 Mes débuts dans le script Bash
 
-![Scripting](https://img.shields.io/badge/Scripting-Automation-white?style=for-the-badge&logo=bitrise)
-![Linux](https://img.shields.io/badge/OS-Linux-orange?style=for-the-badge&logo=linux)
-![Bash](https://img.shields.io/badge/Langage-Bash-green?style=for-the-badge&logo=gnubash)
+![Statut](https://img.shields.io/badge/Statut-Termin%C3%A9e-green?style=flat-square&logo=github)
+
+![Bash](https://img.shields.io/badge/Script-Bash-orange?style=flat-square&logo=gnubash)
+![Powershell](https://img.shields.io/badge/Script-PowerShell-blue?style=flat-square&logo=github)
+
+![Logiciel](https://img.shields.io/badge/Editeur%20de%20script-VisualStudioCode-white?style=flat-square&logo=github)
 
 ## 📝 Contexte
 
@@ -16,7 +19,7 @@ L’objectif était de mettre en œuvre les bases du scripting Bash tout en resp
 - 🎉 Afficher un message de réussite une fois la sauvegarde effectuée  
 - 🔄 Proposer à l’utilisateur d’effectuer une autre sauvegarde  
 
-## 📜 Script de la formation
+## 📜 Script initial de la formation
 
 Voici le script que j’ai développé dans le cadre de cet exercice.
 
@@ -82,9 +85,8 @@ fi
 #Copier dans l'éditeur de code fourni le script, une fois conçu et testé sur son ordinateur
 ```
 
-## ⚙️ Version actuelle
-Vous pouvez consulter la version mise à jour du script [ici](/first-script/script.sh).  
-
+## 🐧 Version Ubuntu
+> Vous trouverez [ici](/first-script/script.sh) une version **améliorée** du script développé dans le cadre de ma formation.
 
 ### 🧩 Ce qui a changé et pourquoi  
 
@@ -112,7 +114,7 @@ Vous pouvez consulter la version mise à jour du script [ici](/first-script/scri
 - **Chemins absolus** exigés pour éviter toute ambiguïté et garantir la précision des opérations.  
 - Structure de script basée sur des **conditions imbriquées claires** et des **retours utilisateur explicites**.
 
-### 🚀 Pistes d’amélioration (prochaines itérations)  
+### 🚀 Pistes d’amélioration 
 - Accepter les saisies contenant `$HOME` ou `~` (expansion automatique après lecture).  
 - Bloquer les sauvegardes dont la destination se situe à l’intérieur du dossier source (prévention des boucles de copie).  
 - Ajouter des options avancées :  
@@ -143,11 +145,10 @@ n
 Fin du script.
 ```
 
-## Bonus : version PowerShell
+## 🪟 Bonus : version PowerShell
+> Vous trouverez [ici](/first-script/script.ps1) une version **PowerShell** du script.
 
-➜ Vous pouvez consulter la version **PowerShell** du script [ici](/first-script/script.ps1)
-
-Pour la formation, le script était demandé en bash. Pour ma formation personnel, j'ai décidé de faire son équivalent UX en **PowerShell**, en utilisant :
+Pour la formation TSSR, le script était demandé en bash. Pour ma formation personnel, j'ai décidé de faire son équivalent UX en **PowerShell**, en utilisant :
 - *$env:OS -ne "Windows_NT"* : Qui permet de pouvoir lancer le script que si le système d'exploitation est Windows.
 - *Robocopy* : Qui permet de faire la sauvegarde avec un visuel
 

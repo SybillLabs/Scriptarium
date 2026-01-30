@@ -1,4 +1,4 @@
-# 📜 Scriptatirium
+# 📜 Scriptarium
 
 ![Statut](https://img.shields.io/badge/Statut-En%20perp%C3%A9tuelle%20%C3%A9volution-purple?style=flat-square&logo=github)
 ![FR](https://img.shields.io/badge/Langue-Fran%C3%A7ais-blue?style=flat-square&logo=github)

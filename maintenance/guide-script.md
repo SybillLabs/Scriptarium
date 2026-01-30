@@ -1,5 +1,12 @@
 # 📘 Guide de l'utilisateur
 
+![Statut](https://img.shields.io/badge/Statut-En%20cours-yellow?style=flat-square&logo=github)
+
+![Bash](https://img.shields.io/badge/Script-Bash-orange?style=flat-square&logo=gnubash)
+![Powershell](https://img.shields.io/badge/Script-PowerShell-blue?style=flat-square&logo=github)
+
+![Logiciel](https://img.shields.io/badge/Editeur%20de%20script-VisualStudioCode-white?style=flat-square&logo=github)
+
 ## 🌍 Généralités
 
 Ce guide explique les scripts que j’ai créés pour assurer la maintenance des systèmes d’exploitation de mon ordinateur.
