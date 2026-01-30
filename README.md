@@ -44,7 +44,6 @@ Ces scripts seront écrits en **différents langages**, selon leur environnement
 ```
 👉 À chaque nouveau thème, un dossier dédié sera créé suivant cette structure.  
 👉 Le dossier **Archives** servira à conserver les scripts plus anciens ou remplacés.  
-👉 Chaque dossier, n'a pas forcément les types de script.
 
 ## 🧰 Installation
 Pour que les chemins relatifs utilisés dans certains scripts fonctionnent correctement, il est recommandé de **cloner ce dépôt dans le dossier `Documents`** de votre répertoire personnel.
