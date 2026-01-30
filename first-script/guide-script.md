@@ -201,4 +201,4 @@ Fin du script.
 
 ---
 
-👉 Retour au fichier [README](/README.md).
+[![README](https://img.shields.io/badge/Back%20to-Scriptarium-blue?style=social&logo=github)](/README.md)

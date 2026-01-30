@@ -85,3 +85,6 @@ SCRIPT USAGE AND DIFFERENCES FROM OTHER APT TOOLS
 
 ⚠️ **En cours de construction…**
 
+---
+
+[![README](https://img.shields.io/badge/Back%20to-Scriptarium-blue?style=social&logo=github)](/README.md)
