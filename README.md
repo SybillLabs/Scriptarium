@@ -88,3 +88,7 @@ Pour utiliser ce dépôt, il est recommandé d’avoir :
 ## ⚠️ Avertissements
 Ces scripts sont fournis **à titre éducatif** et ne sont pas forcément universels.  
 ➡️ Utilisez-les avec prudence et **testez toujours en environnement isolé avant un usage en production**. 
+
+---
+
+[![Profil](https://img.shields.io/badge/Back%20to-SybillLabs%20(Profil)-blue?style=social&logo=github)](https://github.com/SybillLabs)
