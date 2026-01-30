@@ -9,7 +9,6 @@
 
 ![Logiciel](https://img.shields.io/badge/Editeur%20de%20script-VisualStudioCode-white?style=flat-square&logo=github)
 
-
 ## 📝 Contexte
 Le **Scriptarium** me permettra de regrouper des scripts que j'ai travaillé, en équipe ou seule.  
 Ces scripts seront écrits en **différents langages**, selon leur environnement cible :
@@ -34,7 +33,6 @@ Ces scripts seront écrits en **différents langages**, selon leur environnement
 ```
 /
 ├── README.md
-├── README.eng.md
 ├── Dossier du script
 │   └── script.sh
 │   └── script.ps1
@@ -49,7 +47,6 @@ Ces scripts seront écrits en **différents langages**, selon leur environnement
 👉 Chaque dossier, n'a pas forcément les types de script.
 
 ## 🧰 Installation
-
 Pour que les chemins relatifs utilisés dans certains scripts fonctionnent correctement, il est recommandé de **cloner ce dépôt dans le dossier `Documents`** de votre répertoire personnel.
 
 ### 🐧 Sous Linux / macOS
