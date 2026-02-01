@@ -86,7 +86,7 @@ fi
 ```
 
 ## 🐧 Version Ubuntu améliorée
-> Téléchergez [ici](https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/script.sh) la version **améliorée** du script développé dans le cadre de ma formation.
+> Cliquez [ici](/first-script/script.sh) pour voir la version **améliorée** du script développé dans le cadre de ma formation.
 
 ### 🧩 Ce qui a changé et pourquoi  
 
@@ -146,7 +146,7 @@ Fin du script.
 ```
 
 ## 🪟 Bonus : version PowerShell
-> Téléchargez [ici](https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/script.ps1) la version **PowerShell** du script.
+> Cliquez [ici](/first-script/script.ps1) pour voir la version **PowerShell** du script.
 
 Pour la formation TSSR, le script était demandé en bash. Pour ma formation personnel, j'ai décidé de faire son équivalent UX en **PowerShell**, en utilisant :
 - *$env:OS -ne "Windows_NT"* : Qui permet de pouvoir lancer le script que si le système d'exploitation est Windows.
@@ -197,6 +197,20 @@ Sauvegarde effectuée avec succès dans : C:\Users\administrator\Desktop.
 [+] Voulez-vous faire une sauvegarde d'un autre dossier ? [Y/N]
 n
 Fin du script.
+```
+
+## 📥 Récupération du script
+### 🐧 Linux (Bash)
+```bash
+curl -L -O https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/script.sh
+chmod +x script.sh
+```
+
+### 🪟 Windows (PowerShell)
+```powershell
+Invoke-WebRequest `
+  -Uri https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/script.ps1 `
+  -OutFile script.ps1
 ```
 
 ---
