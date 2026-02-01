@@ -65,12 +65,14 @@ git clone https://github.com/tonpseudo/scriptarium.git "$env:USERPROFILE\Documen
 Cette section recense les fichiers `guide-script.md` des derniers scripts en date.
 
 ### [![FirstScript](https://img.shields.io/badge/First%20Script-Script%20de%20sauvegarde%20automatis%C3%A9e%20avec%20validation%20utilisateur-blue?style=social&logo=github)](/first-script/guide-script.md)
-- Sauvegarde automatisée en Bash & en PowerShell
-- Automatisation de sauvegarde Bash
-- Script Bash – sauvegarde interactive
-- Bash & PowerShell : sauvegarde avec contrôles
+- Sauvegarde automatisée en **Bash** & en **PowerShell**
+- Sauvegarde déclenchée via **menu interactif** avec validation utilisateur avant exécution des actions
+- Script non dédié à une machine ou un environnement unique
 
 ### [![Maintenance](https://img.shields.io/badge/Maintenance-Script%20de%20maintenance%20syst%C3%A8me%20automatis%C3%A9e%20avec%20journalisation-blue?style=social&logo=github)](/maintenance/guide-script.md)
+- Script de maintenance système en **Bash** & en **PowerShell**
+- Gestion des mises à jours, du nettoyage et du contrôle des ressources
+- Journalisation des actions élémentaire des erreurs
 
 ## ⚡ Prérequis
 Pour utiliser ce dépôt, il est recommandé d’avoir :  
