@@ -85,7 +85,7 @@ fi
 #Copier dans l'éditeur de code fourni le script, une fois conçu et testé sur son ordinateur
 ```
 
-## 🐧 Version Ubuntu
+## 🐧 Version Ubuntu améliorée
 > Vous trouverez [ici](/first-script/script.sh) une version **améliorée** du script développé dans le cadre de ma formation.
 
 ### 🧩 Ce qui a changé et pourquoi  
