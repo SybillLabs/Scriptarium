@@ -86,7 +86,7 @@ fi
 ```
 
 ## 🐧 Version Ubuntu améliorée
-> Vous trouverez [ici](/first-script/script.sh) une version **améliorée** du script développé dans le cadre de ma formation.
+> Téléchergez [ici](https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/script.sh) la version **améliorée** du script développé dans le cadre de ma formation.
 
 ### 🧩 Ce qui a changé et pourquoi  
 
@@ -146,7 +146,7 @@ Fin du script.
 ```
 
 ## 🪟 Bonus : version PowerShell
-> Vous trouverez [ici](/first-script/script.ps1) une version **PowerShell** du script.
+> Téléchargez [ici](https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/script.ps1) la version **PowerShell** du script.
 
 Pour la formation TSSR, le script était demandé en bash. Pour ma formation personnel, j'ai décidé de faire son équivalent UX en **PowerShell**, en utilisant :
 - *$env:OS -ne "Windows_NT"* : Qui permet de pouvoir lancer le script que si le système d'exploitation est Windows.
