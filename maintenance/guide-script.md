@@ -1,4 +1,4 @@
-# 📘 Guide de l'utilisateur
+# 📘 Guide de l'utilisateur : Script de maintenance
 
 ![Statut](https://img.shields.io/badge/Statut-En%20cours-yellow?style=flat-square&logo=github)
 

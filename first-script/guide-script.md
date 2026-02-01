@@ -1,4 +1,4 @@
-# 💻 Mes débuts dans le script Bash
+# 💻 Guide de l'utilisateur : Script de sauvegarde
 
 ![Statut](https://img.shields.io/badge/Statut-Termin%C3%A9e-green?style=flat-square&logo=github)
 
