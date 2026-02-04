@@ -79,8 +79,26 @@ Le module **PSWindowsUpdate** n’est pas intégré par défaut à Windows. Il d
         `Get-Module -ListAvailable -Name PSWindowsUpdate`
 
 ### 🧹 Etape 4 : Nettoyage du système
+- Le script effectue un nettoyage du système sous plusieurs aspects, en fonction du système d'exploitation :
+    - Sous Linux :
+        - Suppression des paquets installés automatiquement et devenus inutiles à l'aide de la commande :  
+            `apt autoremove`
+        - Suppressions des fichiers `.deb`obsolètes, tout en conservant ceux encore téléchargeables, à l'aide de la commande :  
+            `apt autoclean`
+    - Sous Windows : 
+        - Nettoyage des fichiers temporaires de l'utilisateur :  
+            `Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue`
+        - Nettoyage des fichiers temporaires système : 
+            `Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue`
+        - Nettoyage du cache **Windows Update** :  
+```PowerShell
+Stop-Service -Name wuauserv -Force
+Remove-Item -Path C:\Windows\SoftwareDistribution\Download\* -Recurse -Force -ErrorAction SilentlyContinue
+Start-Service -Name wuauserv
+```
 
 ### 💾 Etape 5 : Vérification de l'espace disque
+
 
 ### 🧠 Etape 6 : Vérification de la mémoire
 
