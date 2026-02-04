@@ -202,14 +202,14 @@ Fin du script.
 ## 📥 Récupération du script
 ### 🐧 Linux (Bash)
 ```bash
-curl -L -O 
+curl -L -O https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/backup_script_ubuntu.sh
 chmod +x backup_script.sh
 ```
 
 ### 🪟 Windows (PowerShell)
 ```powershell
 Invoke-WebRequest `
-  -Uri  `
+  -Uri https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/backup_script_windows.ps1 `
   -OutFile backup_script.ps1
 ```
 
