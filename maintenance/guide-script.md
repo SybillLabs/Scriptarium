@@ -34,10 +34,49 @@ Bien que les langages et les outils diffèrent selon le système d’exploitatio
 > Les deux scripts mettent en œuvre une **gestion élémentaire des erreurs** (Bash / PowerShell). En cas d’échec d’une commande, l’erreur est consignée dans le fichier de **journalisation**, afin d’assurer la traçabilité de l’exécution.
 
 ### 📝 Etape 1 : Journalisation
+- Les fichiers de journalisation sont enregistrés dans un répertoire dédié :
+    - sous Linux : `var/log/maintenance`
+    - sous Windows : `C:\Logs\Maintenance`
+- Chaque exécution du script génère un fichier de log nommé selon le format suivant : `LOG-DD-MM-YYYY.log`.
+- Le fichier de journalisation contient l’ensemble des sorties du script, incluant les messages d’information ainsi que les éventuelles erreurs, afin d’assurer la traçabilité de l’exécution.
 
 ### 🔐 Etape 2 : Vérification des droits administrateur
+- Le script vérifie qu'il est exécuté avec des droits administrateur.
+- Si l'utilisateur ne dispose pas des privilèges nécessaires :
+    - un message d'erreur est affiché indiquant que le script doit être relancé avec des droits administrateur ;
+    - le script s'arrête automatiquement.
+- Cette vérification garantit que l'ensemble des opérations de maintenance peut être exécuté correctement.
 
 ### 🔄 Etape 3 : Mise à jour du système
+- Le script vérifie la disponibilité de mises à jour, puis déclencheur leur installation via des commandes en ligne, propres à chaque environnement :
+    - Sous Linux : 
+        - Recherche des mises à jour : `apt update`
+        - Installation des mises à jour : `apt upgrade`
+    - Sous Windows :
+        - Le script s'appuie sur le module **PSWindowsUpdate** afin de piloter Windows Update **sans interface graphique**.
+        - Recherche de mises à jour : `Get-WindowsUpdate`
+        - Installation des mises à jours : `Install-WindowsUpdate`
+- Cette étape permet d'effectuer les mises à jour du système de manière automatisée et contrôlée, à l'initiative de l'utilisateur.
+
+#### ℹ️ Remarque – Module PSWindowsUpdate
+Le module **PSWindowsUpdate** n’est pas intégré par défaut à Windows. Il doit être présent sur la machine afin de pouvoir utiliser les commandes `Get-WindowsUpdate` et `Install-WindowsUpdate`.
+
+- 🔎 **Vérification de la présence du module**
+    - La présence du module peut être vérifiée à l’aide de la commande suivante :  
+        `Get-Module -ListAvailable -Name PSWindowsUpdate`
+    - Si une sortie s’affiche, le module est installé.
+    - Si aucune sortie ne s’affiche, le module n’est pas présent sur le système.
+- 📦 **Installation du module (si nécessaire)**
+    - L’installation doit être effectuée depuis une session PowerShell lancée en administrateur :  
+        `Install-Module -Name PSWindowsUpdate -Force`
+    - Lors de la première installation, PowerShell peut demander d’autoriser l’utilisation d’un dépôt non approuvé.  
+        Dans ce cas, il convient de répondre O (Oui).
+- 🔓 **Chargement du module dans la session**
+    - Le module peut être installé sans être chargé automatiquement dans la session courante.
+    - Il est donc recommandé de le charger explicitement à l’aide de la commande suivante :  
+        `Import-Module PSWindowsUpdate`
+    - La présence du module peut ensuite être confirmée en relançant la commande :  
+        `Get-Module -ListAvailable -Name PSWindowsUpdate`
 
 ### 🧹 Etape 4 : Nettoyage du système
 
