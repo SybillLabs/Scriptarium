@@ -68,9 +68,11 @@ Get-Module -ListAvailable -Name PSWindowsUpdate
 
 # Installation du module (si nécessaire) en administrateur
 Install-Module -Name PSWindowsUpdate -Force
-# Lors de la première installation, PowerShell peut demander d’autoriser l’utilisation d’un dépôt non approuvé. Dans ce cas, il convient de répondre O (Oui).
+# Lors de la première installation, PowerShell peut demander d’autoriser l’utilisation d’un dépôt non approuvé. 
+# Dans ce cas, il convient de répondre O (Oui).
 
-# Chargement du module dans la session. Le module peut être installé sans être chargé automatiquement dans la session courante. Il est donc recommandé de le charger explicitement à l’aide de la commande suivante :  
+# Chargement du module dans la session. Le module peut être installé sans être chargé automatiquement dans la session courante. 
+# Il est donc recommandé de le charger explicitement à l’aide de la commande suivante :  
 Import-Module PSWindowsUpdate
 
 # La présence du module peut ensuite être confirmée en relançant la commande :  
