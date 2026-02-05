@@ -61,22 +61,21 @@ Bien que les langages et les outils diffèrent selon le système d’exploitatio
 #### ℹ️ Remarque – Module PSWindowsUpdate
 Le module **PSWindowsUpdate** n’est pas intégré par défaut à Windows. Il doit être présent sur la machine afin de pouvoir utiliser les commandes `Get-WindowsUpdate` et `Install-WindowsUpdate`.
 
-- 🔎 **Vérification de la présence du module**
-    - La présence du module peut être vérifiée à l’aide de la commande suivante :  
-        `Get-Module -ListAvailable -Name PSWindowsUpdate`
-    - Si une sortie s’affiche, le module est installé.
-    - Si aucune sortie ne s’affiche, le module n’est pas présent sur le système.
-- 📦 **Installation du module (si nécessaire)**
-    - L’installation doit être effectuée depuis une session PowerShell lancée en administrateur :  
-        `Install-Module -Name PSWindowsUpdate -Force`
-    - Lors de la première installation, PowerShell peut demander d’autoriser l’utilisation d’un dépôt non approuvé.  
-        Dans ce cas, il convient de répondre O (Oui).
-- 🔓 **Chargement du module dans la session**
-    - Le module peut être installé sans être chargé automatiquement dans la session courante.
-    - Il est donc recommandé de le charger explicitement à l’aide de la commande suivante :  
-        `Import-Module PSWindowsUpdate`
-    - La présence du module peut ensuite être confirmée en relançant la commande :  
-        `Get-Module -ListAvailable -Name PSWindowsUpdate`
+``` powershell
+# Vérification de la présence du module. La présence du module peut être vérifiée à l’aide de la commande suivante :
+Get-Module -ListAvailable -Name PSWindowsUpdate
+# Si une sortie s’affiche, le module est installé. Sinon le module n’est pas présent sur le système.
+
+# Installation du module (si nécessaire) en administrateur
+Install-Module -Name PSWindowsUpdate -Force
+# Lors de la première installation, PowerShell peut demander d’autoriser l’utilisation d’un dépôt non approuvé. Dans ce cas, il convient de répondre O (Oui).
+
+# Chargement du module dans la session. Le module peut être installé sans être chargé automatiquement dans la session courante. Il est donc recommandé de le charger explicitement à l’aide de la commande suivante :  
+Import-Module PSWindowsUpdate
+
+# La présence du module peut ensuite être confirmée en relançant la commande :  
+Get-Module -ListAvailable -Name PSWindowsUpdate
+```
 
 ### 🧹 Etape 4 : Nettoyage du système
 - Le script effectue un nettoyage du système sous plusieurs aspects, en fonction du système d'exploitation :
@@ -98,7 +97,16 @@ Start-Service -Name wuauserv
 ```
 
 ### 💾 Etape 5 : Vérification de l'espace disque
-
+- Le script effectuera un inventaire des disques, des volumes et des partitions ainsi que l'état de montage.
+- Pour chaque volume et point de montage, le script collectera et fera une liste :
+    - L'identifiant *volume label* pour **Windows** et *LABEL* pour **Linux**. Bonus pour **Linux**, son *UUID* s'il est disponible.
+    - Le point de montage pour **Linux** et la *lettre et chemin* pour **Windows**.
+    - Le type de système de fichier (**FS**) : *ext4*, *ntfs*, *fat32*, ...
+    - La taille totale, libre, utilisé, et le % utilisé.
+- Pour finir le script affichera un seuil d'alerte :
+    - Stockages < 80% : OK
+    - Stockages > 80% : Warnning
+    - Stockages > 90% : Critique
 
 ### 🧠 Etape 6 : Vérification de la mémoire
 
