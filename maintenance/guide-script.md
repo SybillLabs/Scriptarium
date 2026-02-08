@@ -163,10 +163,10 @@ Start-Service -Name wuauserv
 > Cette vérification ne remplace pas un outil de supervision et ne déclenche aucune action corrective automatique.
 
 ## 🔗 Liens vers les scripts de maintenance
-### 🐧 Linux (Bash)
+### 🐧 Script Linux
 [![](https://img.shields.io/badge/Linux-Script%20de%20maintenance-blue?style=social&logo=github)](/maintenance/maintenance_script_ubuntu.sh) 
 
-### 🪟 Windows (PowerShell)
+### 🪟 Script Windows
 [![](https://img.shields.io/badge/Windows-Script%20de%20maintenance-blue?style=social&logo=github)](/maintenance/maintenance_script_windows.ps1)
 
 ---
