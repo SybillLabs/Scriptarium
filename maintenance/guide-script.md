@@ -37,7 +37,7 @@ Bien que les langages et les outils diffèrent selon le système d’exploitatio
 - Les fichiers de journalisation sont enregistrés dans un répertoire dédié :
     - sous Linux : `/var/log/maintenance`
     - sous Windows : `C:\Logs\Maintenance`
-- Chaque exécution du script génère un fichier de log nommé selon le format suivant : `LOG-DD-MM-YYYY.log`.
+- Chaque exécution du script génère un fichier de log nommé selon le format suivant : `maintenance_DD-MM-YYYY.log`.
 - Le fichier de journalisation contient l’ensemble des sorties du script, incluant les messages d’information ainsi que les éventuelles erreurs, afin d’assurer la traçabilité de l’exécution.
 
 ### 🔐 Etape 2 : Vérification des droits administrateur
@@ -161,6 +161,24 @@ Start-Service -Name wuauserv
     - La valeur obtenue correspond directement à un pourcentage de charge CPU.
 
 > Cette vérification ne remplace pas un outil de supervision et ne déclenche aucune action corrective automatique.
+
+## 🔗 Liens vers les scripts de maintenance
+### 🐧 Linux (Bash)
+[![](https://img.shields.io/badge/Linux-Script%20de%20maintenance-blue?style=social&logo=github)](/maintenance/maintenance_script_ubuntu.sh) 
+
+```bash
+curl -L -O https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/maintenance/maintenance_script_ubuntu.sh
+chmod +x maintenance_script_ubuntu.sh
+```
+
+### 🪟 Windows (PowerShell)
+[![](https://img.shields.io/badge/Windows-Script%20de%20maintenance-blue?style=social&logo=github)](/maintenance/maintenance_script_windows.ps1)
+
+```powershell
+Invoke-WebRequest `
+  -Uri https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/maintenance/maintenance_script_windows.ps1 `
+  -OutFile maintenance_script_windows.ps1
+```
 
 ---
 
