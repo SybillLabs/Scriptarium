@@ -166,19 +166,8 @@ Start-Service -Name wuauserv
 ### 🐧 Linux (Bash)
 [![](https://img.shields.io/badge/Linux-Script%20de%20maintenance-blue?style=social&logo=github)](/maintenance/maintenance_script_ubuntu.sh) 
 
-```bash
-curl -L -O https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/maintenance/maintenance_script_ubuntu.sh
-chmod +x maintenance_script_ubuntu.sh
-```
-
 ### 🪟 Windows (PowerShell)
 [![](https://img.shields.io/badge/Windows-Script%20de%20maintenance-blue?style=social&logo=github)](/maintenance/maintenance_script_windows.ps1)
-
-```powershell
-Invoke-WebRequest `
-  -Uri https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/maintenance/maintenance_script_windows.ps1 `
-  -OutFile maintenance_script_windows.ps1
-```
 
 ---
 

@@ -199,20 +199,6 @@ n
 Fin du script.
 ```
 
-## 📥 Récupération du script
-### 🐧 Linux (Bash)
-```bash
-curl -L -O https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/backup_script_ubuntu.sh
-chmod +x backup_script_ubuntu.sh
-```
-
-### 🪟 Windows (PowerShell)
-```powershell
-Invoke-WebRequest `
-  -Uri https://raw.githubusercontent.com/SybillLabs/Scriptarium/refs/heads/main/first-script/backup_script_windows.ps1 `
-  -OutFile backup_script_windows.ps1
-```
-
 ---
 
 [![README](https://img.shields.io/badge/Back%20to-Scriptarium-blue?style=social&logo=github)](/README.md)
