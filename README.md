@@ -1,3 +1,12 @@
+# 🗃️ Dépôt archivé
+
+Ce projet a été archivé car ma méthode d’apprentissage a évolué.
+Je le conserve pour historique et progression personnelle.
+
+📌 Statut : Archivé – non maintenu
+
+---
+
 # 📜 Scriptarium
 
 ![Statut](https://img.shields.io/badge/Statut-En%20perp%C3%A9tuelle%20%C3%A9volution-purple?style=flat-square&logo=github)
